@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTransition from '../components/PageTransition';
 import EcosystemDiagram from '../components/EcosystemDiagram';
+import { SOLUTIONS } from '../content/siteContent';
 import { useReveal } from '../hooks/useReveal';
 import './Ecosystem.css';
 
@@ -52,6 +53,9 @@ function FramingSection() {
               that the system runs on. Without current tools, interactive methods lack
               substance, and self-study becomes aimless.
             </p>
+            <p className="eco-framing__role-cite mono text-muted">
+              {SOLUTIONS[1].citations.join('; ')}
+            </p>
           </div>
 
           <div className="eco-framing__role">
@@ -62,6 +66,9 @@ function FramingSection() {
               independent self-study. Dialogic-critical pedagogy, PBL, and scenario-based
               workshops transform passive learners into active reasoners.
             </p>
+            <p className="eco-framing__role-cite mono text-muted">
+              {SOLUTIONS[2].citations.join('; ')}
+            </p>
           </div>
 
           <div className="eco-framing__role">
@@ -71,6 +78,9 @@ function FramingSection() {
               Teaching independent self-study creates the autonomous learner the ecosystem
               aims to produce — equipped with a growth mindset for lifelong learning and
               adaptation beyond graduation.
+            </p>
+            <p className="eco-framing__role-cite mono text-muted">
+              {SOLUTIONS[0].citations.join('; ')}
             </p>
           </div>
 
@@ -83,6 +93,9 @@ function FramingSection() {
               ensure that independent learners are empowered by — rather than manipulated
               by — the digital platforms and AI systems they use.
             </p>
+            <p className="eco-framing__role-cite mono text-muted">
+              {SOLUTIONS[3].citations.join('; ')}
+            </p>
           </div>
         </div>
 
@@ -93,7 +106,6 @@ function FramingSection() {
             rather than manipulated by — the digital platforms and AI systems they use
             to teach themselves."
           </p>
-          <cite className="mono text-muted">— Literature Review, Conclusion</cite>
         </blockquote>
       </div>
     </section>

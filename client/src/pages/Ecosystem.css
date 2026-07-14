@@ -75,6 +75,13 @@
   max-width: none;
 }
 
+.eco-framing__role-cite {
+  font-size: var(--text-xs);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border);
+}
+
 .eco-framing__conclusion {
   padding: var(--space-xl);
   border-left: 3px solid var(--accent-secondary);

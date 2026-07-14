@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { to: '/solutions/self-study', label: 'Solutions', match: '/solutions' },
   { to: '/evidence', label: 'Evidence', match: '/evidence' },
   { to: '/recommendations', label: 'Recommendations', match: '/recommendations' },
+  { to: '/references', label: 'References', match: '/references' },
 ];
 
 export default function Nav({ theme, onToggleTheme }) {

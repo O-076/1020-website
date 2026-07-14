@@ -9,6 +9,7 @@ import Ecosystem from './pages/Ecosystem';
 import Solutions from './pages/Solutions';
 import Evidence from './pages/Evidence';
 import Recommendations from './pages/Recommendations';
+import References from './pages/References';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/solutions/:slug" element={<Solutions />} />
           <Route path="/evidence" element={<Evidence />} />
           <Route path="/recommendations" element={<Recommendations />} />
+          <Route path="/references" element={<References />} />
         </Routes>
 
         <Footer />

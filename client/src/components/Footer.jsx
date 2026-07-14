@@ -18,6 +18,7 @@ export default function Footer() {
           <Link to="/solutions/self-study">Solutions</Link>
           <Link to="/evidence">Evidence</Link>
           <Link to="/recommendations">Recommendations</Link>
+          <Link to="/references">References</Link>
         </nav>
 
         <p className="footer__note mono text-muted">

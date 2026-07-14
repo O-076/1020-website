@@ -152,7 +152,10 @@ export default function EcosystemDiagram() {
             </div>
             <p className="eco-diagram__detail-summary">{activeSolution.summary}</p>
             <p className="eco-diagram__detail-citation mono text-muted">
-              — {activeSolution.keyCitation}
+              — {activeSolution.citations[0]}
+              {activeSolution.citations.length > 1 && (
+                <span> +{activeSolution.citations.length - 1} more</span>
+              )}
             </p>
             <Link to={`/solutions/${activeSolution.id}`} className="btn btn--outline">
               Read Full Analysis →

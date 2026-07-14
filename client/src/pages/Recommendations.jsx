@@ -68,7 +68,6 @@ function ClosingStatement() {
             rather than manipulated by — the digital platforms and AI systems they use
             to teach themselves.
           </p>
-          <cite className="mono text-muted">— Literature Review, Conclusion</cite>
         </blockquote>
       </div>
     </section>

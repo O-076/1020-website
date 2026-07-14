@@ -54,7 +54,7 @@ function SolutionContent({ solution }) {
         </div>
 
         <p className="sol-content__citation mono text-muted">
-          Key source: {solution.keyCitation}
+          Sources: {solution.citations.join('; ')}
         </p>
       </div>
     </section>

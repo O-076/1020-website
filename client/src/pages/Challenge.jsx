@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import { useReveal } from '../hooks/useReveal';
-import { RESEARCH_QUESTION } from '../content/siteContent';
+import { RESEARCH_QUESTION, CHALLENGE_CITATIONS } from '../content/siteContent';
 import './Challenge.css';
 
 function ChallengeHero() {
@@ -84,6 +84,9 @@ function GatekeepersSection() {
           citations, hallucinated data, and subtly biased framing. Without the skills to
           detect these issues, students absorb misinformation as knowledge.
         </p>
+        <p className="challenge-gate__cite mono text-muted">
+          Sources: {CHALLENGE_CITATIONS.gatekeepers}
+        </p>
 
         <div className="challenge-gate__vulnerabilities">
           <h3>Key Vulnerabilities</h3>
@@ -105,6 +108,9 @@ function GatekeepersSection() {
               than inform, hidden behind a veneer of objectivity
             </li>
           </ul>
+          <p className="challenge-gate__cite mono text-muted" style={{ marginTop: 'var(--space-md)' }}>
+            Sources: {CHALLENGE_CITATIONS.vulnerabilities}
+          </p>
         </div>
       </div>
     </section>

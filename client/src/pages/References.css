@@ -1,0 +1,86 @@
+/* ============================================================
+   References Page Styles
+   ============================================================ */
+
+/* ---------- Hero ---------- */
+.refs-hero {
+  text-align: center;
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.refs-hero__label {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--accent-sec-glow);
+  color: var(--accent-secondary);
+  border-radius: 100px;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xl);
+}
+
+.refs-hero__title {
+  font-size: clamp(var(--text-3xl), 6vw, var(--text-4xl));
+  margin-bottom: var(--space-md);
+}
+
+.refs-hero__sub {
+  font-size: var(--text-lg);
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+/* ---------- Content ---------- */
+.refs-content {
+  padding-block: var(--space-3xl);
+}
+
+/* ---------- Group ---------- */
+.refs-group {
+  margin-bottom: var(--space-3xl);
+}
+
+.refs-group:last-child {
+  margin-bottom: 0;
+}
+
+.refs-group__title {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+.refs-group__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* ---------- Entry ---------- */
+.refs-entry {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.refs-entry__number {
+  flex-shrink: 0;
+  font-size: var(--text-xs);
+  margin-top: 0.25em;
+}
+
+.refs-entry__citation {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  max-width: none;
+  word-break: break-word;
+}
