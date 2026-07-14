@@ -15,7 +15,7 @@ export default function App() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Nav theme={theme} onToggleTheme={toggleTheme} />
 
