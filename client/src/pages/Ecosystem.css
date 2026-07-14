@@ -1,0 +1,104 @@
+/* ============================================================
+   Ecosystem Page Styles
+   ============================================================ */
+
+/* ---------- Hero ---------- */
+.eco-hero {
+  text-align: center;
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.eco-hero__label {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--accent-sec-glow);
+  color: var(--accent-secondary);
+  border-radius: 100px;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xl);
+}
+
+.eco-hero__title {
+  font-size: clamp(var(--text-3xl), 6vw, var(--text-4xl));
+  margin-bottom: var(--space-md);
+}
+
+.eco-hero__sub {
+  font-size: var(--text-lg);
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+/* ---------- Diagram section ---------- */
+.eco-diagram-section {
+  padding-block: var(--space-3xl);
+}
+
+/* ---------- Framing ---------- */
+.eco-framing h2 {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.eco-framing__roles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.eco-framing__role {
+  padding: var(--space-xl);
+  background: var(--surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.eco-framing__role-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.eco-framing__role h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.eco-framing__role p {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  max-width: none;
+}
+
+.eco-framing__conclusion {
+  padding: var(--space-xl);
+  border-left: 3px solid var(--accent-secondary);
+  background: var(--surface);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  box-shadow: var(--shadow-card);
+}
+
+.eco-framing__conclusion p {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+  max-width: none;
+}
+
+.eco-framing__conclusion cite {
+  font-style: normal;
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 640px) {
+  .eco-framing__roles {
+    grid-template-columns: 1fr;
+  }
+}

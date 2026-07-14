@@ -1,0 +1,92 @@
+/* ============================================================
+   Design Tokens — Curriculum Ecosystem
+   Source: docs/DESIGN_SYSTEM.md
+   Switch via data-theme="light|dark" on <html>
+   ============================================================ */
+
+/* ---------- Light (default) ---------- */
+:root,
+[data-theme="light"] {
+  --bg:               #F7F5F0;
+  --surface:          #FFFFFF;
+  --text:             #1B2A4A;
+  --text-muted:       #5B6478;
+  --accent:           #C98A2C;
+  --accent-secondary: #3E6E64;
+  --alert:            #B4453A;
+  --border:           #E4E0D5;
+
+  /* Derived */
+  --accent-glow:      rgba(201, 138, 44, 0.15);
+  --accent-sec-glow:  rgba(62, 110, 100, 0.12);
+  --shadow-card:      0 2px 12px rgba(27, 42, 74, 0.06);
+  --shadow-card-hover:0 6px 24px rgba(27, 42, 74, 0.10);
+}
+
+/* ---------- Dark ---------- */
+[data-theme="dark"] {
+  --bg:               #161B2E;
+  --surface:          #1F2740;
+  --text:             #F2F0E9;
+  --text-muted:       #9BA3B8;
+  --accent:           #E0A94A;
+  --accent-secondary: #5C9A8C;
+  --alert:            #D9695C;
+  --border:           #2C3450;
+
+  /* Derived */
+  --accent-glow:      rgba(224, 169, 74, 0.15);
+  --accent-sec-glow:  rgba(92, 154, 140, 0.12);
+  --shadow-card:      0 2px 12px rgba(0, 0, 0, 0.25);
+  --shadow-card-hover:0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Typography tokens ---------- */
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+  /* 1.25 major-third scale from 16px base */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-md:   1.125rem;   /* 18px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.5625rem;  /* 25px */
+  --text-2xl:  1.953rem;   /* ~31px */
+  --text-3xl:  2.441rem;   /* ~39px */
+  --text-4xl:  3.052rem;   /* ~49px */
+
+  /* Spacing scale */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Layout */
+  --max-width-reading: 42rem;
+  --max-width-content: 64rem;
+  --max-width-wide:    80rem;
+  --border-radius:     0.5rem;
+  --border-radius-lg:  1rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 500ms;
+}
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+}

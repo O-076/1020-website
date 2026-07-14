@@ -1,0 +1,214 @@
+/* ============================================================
+   Solutions Page Styles
+   ============================================================ */
+
+/* ---------- Solution nav tabs ---------- */
+.sol-nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sol-nav__inner {
+  display: flex;
+  gap: var(--space-xs);
+  padding-block: var(--space-sm);
+}
+
+.sol-nav__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.sol-nav__link:hover {
+  color: var(--text);
+  background: var(--accent-glow);
+}
+
+.sol-nav__link--active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.sol-nav__link-icon {
+  font-size: 1rem;
+}
+
+/* ---------- Content ---------- */
+.sol-content__header {
+  margin-bottom: var(--space-3xl);
+}
+
+.sol-content__number {
+  display: block;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-md);
+}
+
+.sol-content__title {
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-3xl));
+  margin-bottom: var(--space-md);
+}
+
+.sol-content__tagline {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  max-width: 44ch;
+}
+
+/* Role badge */
+.sol-content__role-badge {
+  padding: var(--space-lg);
+  background: var(--surface);
+  border-radius: var(--border-radius-lg);
+  border-left: 3px solid var(--accent-secondary);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-3xl);
+}
+
+.sol-content__role-badge span {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.sol-content__role-badge p {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-style: italic;
+  max-width: none;
+}
+
+/* Points */
+.sol-content__points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.sol-content__point {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.sol-content__point-marker {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.55em;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.sol-content__point p {
+  font-size: var(--text-md);
+  line-height: 1.7;
+  max-width: none;
+}
+
+.sol-content__citation {
+  font-size: var(--text-sm);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Bias section ---------- */
+.sol-bias__intro {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.sol-bias__intro h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.sol-bias__intro p {
+  font-size: var(--text-sm);
+  max-width: 40ch;
+  margin-inline: auto;
+}
+
+/* ---------- Adjacent solutions ---------- */
+.sol-adjacent__heading {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.sol-adjacent__sub {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  font-size: var(--text-md);
+  max-width: 40ch;
+  margin-inline: auto;
+}
+
+.sol-adjacent__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.sol-adjacent__card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.sol-adjacent__card-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.sol-adjacent__card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.sol-adjacent__card p {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  flex: 1;
+  max-width: none;
+}
+
+.sol-adjacent__card-arrow {
+  margin-top: var(--space-md);
+  font-size: var(--text-lg);
+  color: var(--accent-secondary);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.sol-adjacent__card:hover .sol-adjacent__card-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sol-adjacent__card:hover .sol-adjacent__card-arrow {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sol-adjacent__grid {
+    grid-template-columns: 1fr;
+  }
+}

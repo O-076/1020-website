@@ -1,0 +1,198 @@
+/* ============================================================
+   EcosystemDiagram — The Thread Signature Element
+   ============================================================ */
+
+.eco-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+/* ---------- SVG Canvas ---------- */
+.eco-diagram__svg {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+/* ---------- Thread lines ---------- */
+.eco-diagram__thread {
+  stroke: var(--accent-secondary);
+  stroke-width: 1.5;
+  stroke-dasharray: 8 6;
+  opacity: 0.4;
+  animation: threadFlow 25s linear infinite;
+}
+
+.eco-diagram__thread--d1 { animation-delay: -5s; }
+.eco-diagram__thread--d2 { animation-delay: -10s; }
+.eco-diagram__thread--d3 { animation-delay: -15s; }
+.eco-diagram__thread--cross {
+  opacity: 0.15;
+  stroke-dasharray: 4 10;
+}
+
+@keyframes threadFlow {
+  to { stroke-dashoffset: -280; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eco-diagram__thread {
+    animation: none;
+    stroke-dasharray: 4 4;
+  }
+}
+
+/* ---------- Center label ---------- */
+.eco-diagram__center-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+}
+
+/* ---------- Nodes ---------- */
+.eco-diagram__node {
+  fill: var(--surface);
+  stroke: var(--accent-secondary);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill var(--duration-fast) var(--ease-out),
+              stroke var(--duration-fast) var(--ease-out),
+              stroke-width var(--duration-fast) var(--ease-out);
+}
+
+.eco-diagram__node:hover {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+.eco-diagram__node--active {
+  fill: var(--accent-sec-glow);
+  stroke: var(--accent-secondary);
+  stroke-width: 3;
+}
+
+.eco-diagram__node:focus-visible {
+  outline: none;
+  stroke: var(--accent);
+  stroke-width: 3.5;
+  stroke-dasharray: none;
+}
+
+/* Glow ring behind active node */
+.eco-diagram__glow {
+  fill: none;
+  stroke: var(--accent-secondary);
+  stroke-width: 1;
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out),
+              r var(--duration-normal) var(--ease-out);
+  stroke-dasharray: 4 4;
+  animation: glowSpin 12s linear infinite;
+}
+
+@keyframes glowSpin {
+  to { stroke-dashoffset: -80; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eco-diagram__glow { animation: none; }
+}
+
+/* Icon inside node */
+.eco-diagram__icon {
+  font-size: 26px;
+  user-select: none;
+}
+
+/* Label below node */
+.eco-diagram__label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--text-muted);
+  transition: fill var(--duration-fast) var(--ease-out);
+}
+
+.eco-diagram__label--active {
+  fill: var(--accent-secondary);
+}
+
+/* ---------- Detail panel ---------- */
+.eco-diagram__detail {
+  width: 100%;
+  max-width: 540px;
+  min-height: 60px;
+  padding: var(--space-xl);
+  background: var(--surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out);
+  pointer-events: none;
+}
+
+.eco-diagram__detail--visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eco-diagram__detail {
+    transform: none;
+    transition: opacity var(--duration-fast);
+  }
+}
+
+.eco-diagram__detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.eco-diagram__detail-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.eco-diagram__detail-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.eco-diagram__detail-role {
+  font-size: var(--text-xs);
+  max-width: none;
+}
+
+.eco-diagram__detail-summary {
+  font-size: var(--text-base);
+  line-height: 1.65;
+  margin-bottom: var(--space-md);
+}
+
+.eco-diagram__detail-citation {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-lg);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .eco-diagram__svg {
+    max-width: 100%;
+  }
+
+  .eco-diagram__detail {
+    padding: var(--space-lg);
+  }
+}
