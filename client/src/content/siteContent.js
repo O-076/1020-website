@@ -55,14 +55,13 @@ export const SOLUTIONS = [
     tagline: 'Simply telling students to teach themselves is insufficient — active engagement is essential.',
     summary:
       'True educational transformation requires a "dialogic-critical" method where students participate in active, critical dialog to co-construct knowledge rather than passively consuming digital content.',
-    citations: ['Albardía et al., 2025', 'Rodríguez Castillo et al., 2026', 'Ma et al., 2025', 'Banaji & Abades Barclay, 2024'],
+    citations: ['Albardía et al., 2025', 'Ma et al., 2025', 'Banaji & Abades Barclay, 2024'],
     ecosystemRole: 'The engine — the engaging pedagogy that drives self-directed learning forward.',
     color: 'var(--accent)',
     points: [
-      'Albardía et al. (2025) emphasize that true transformation needs a "dialogic-critical" method — active, critical dialog to co-construct knowledge.',
-      'A systematic meta-analysis by Rodríguez Castillo et al. (2026) shows that active source verification, lateral reading, and "cognitive inoculation" (prebunking) significantly improve the ability to identify fake news.',
-      'Ma et al. (2025) advocate integrating AI directly into Problem-Based Learning (PBL) and Project-Based Learning (PjBL) — using AI as a brainstorming partner students must evaluate and fact-check.',
-      'The LSE evaluation of the Digital Citizenship Curriculum found that scenario-based, interactive explorations in a "creative workshop-style format" effectively build resistance to misinformation.',
+      'Albardía et al. (2025) argue that meaningful transformation requires a "dialogic-critical" method, in which students engage in active, critical dialogue to construct knowledge together, rather than absorbing it passively.',
+      'Ma et al. (2025) advocate integrating AI directly into Problem-Based Learning (PBL) and Project-Based Learning (PjBL), where students use AI as a brainstorming partner they\'re required to evaluate and fact-check rather than accept at face value.',
+      'The LSE evaluation of the Digital Citizenship Curriculum found that scenario-based, interactive explorations delivered in a "creative workshop-style format" build resistance to misinformation.',
     ],
   },
   {
