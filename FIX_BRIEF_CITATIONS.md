@@ -98,15 +98,16 @@ the same rigor applied.
   generalize or drop citations when paraphrasing — if the literature review
   ties a sentence to two authors, the site should show both, not one.
 
-## Note on the employer-credential stat — no change
+## Note on the employer-credential stat — superseded, see CONTENT_REVISION.md
 
-`siteContent.js`'s `EVIDENCE_CARDS` entry with id `employer-stat` attributes
-the 75% figure to Ma et al., 2025. **Keep this as-is.** This is a deliberate
-group decision to stay within the assignment's six approved sources rather
-than introduce a seventh (the stat's ultimate primary origin is a Coursera
-report, surfaced during research, but the group has chosen to cite it via
-Ma et al., 2025 since that source is part of the required six). Do not
-change this attribution.
+This section previously said to keep the employer-stat citation as Ma et
+al., 2025. **That decision has been reversed.** Per `docs/CONTENT_REVISION.md`,
+the group has decided to follow Naiera's attribution instead: the 75%
+stat/quote is now cited to **University System of Maryland, 2025**
+everywhere it appears — update the `source` field on the `employer-stat`
+entry in `EVIDENCE_CARDS` (`siteContent.js`) to University System of
+Maryland, 2025, and use the same attribution for the new pull-quote box on
+the Solutions page (Solution 2), per CONTENT_REVISION.md section 3.
 
 ## Constraints (unchanged from the original build)
 

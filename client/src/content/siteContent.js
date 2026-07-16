@@ -18,20 +18,20 @@ export const SOLUTIONS = [
     tagline: 'The open web demands self-directed learning — no gatekeepers means the learner is responsible.',
     summary:
       'The open web lacks traditional quality-assurance gatekeepers, shifting the responsibility for accessing, selecting, processing, and using trustworthy information entirely onto the independent learner.',
-    citations: ['Molerov et al., 2020'],
+    citations: ['Ma et al., 2025', 'Molerov et al., 2020'],
     ecosystemRole: 'The destination — the autonomous learner the ecosystem aims to create.',
     color: 'var(--accent)',
     points: [
-      'Students must act as independent reasoners: formulating their own research questions, scanning complex search results, and managing their own cognitive processes.',
-      'Curricula must shift from passive, rote memorization toward adaptive, self-directed learning abilities.',
-      'In an AI-saturated world, the unique contribution of human intellect lies in creative problem-solving, critical adaptation, and ethical reasoning.',
-      'Educators should foster a "growth mindset" for lifelong learning and adaptation beyond graduation.',
+      '<strong>Growth Mindset for Lifelong Learning</strong>: Self-directed learners must cultivate a <strong>growth mindset</strong>. As AI evolves rapidly, the curriculum must empower students to be "lifelong learners" through shifting the purpose of learning from completing a degree to continuously developing skills. This prepares learners to adapt to new tools and knowledge beyond formal education.',
+      '<strong>The IPS-I Process = Information Problem Solving Using the Internet</strong>: Independent learning can be structured through a five-step process: defining the problem, searching for information, scanning sources for relevance, processing the information, and presenting the information.',
+      'Self-directed learners are solely responsible for evaluating information reliability. Thus, they must learn strategies such as <strong>lateral reading</strong>, which involves verifying information across multiple sources.',
+      'Prompt literacy further supports this process by helping students ask effective questions when using AI tools.',
     ],
   },
   {
     id: 'industry-curricula',
     number: 2,
-    title: 'Modern, Industry-Backed Curricula',
+    title: 'Modern, Industry-Aligned Curricula',
     shortTitle: 'Industry Tools',
     icon: '🔧',
     tagline: 'Static curriculum models are made obsolete by the pace of Generative AI\'s evolution.',
@@ -40,11 +40,10 @@ export const SOLUTIONS = [
     citations: ['Ma et al., 2025', 'University System of Maryland, 2025'],
     ecosystemRole: 'The fuel — providing the relevant, up-to-date tools the engine runs on.',
     color: 'var(--accent-secondary)',
+    pullQuote: '"In the realm of AI, 75% of these employers said they would hire a less experienced candidate with a GenAI credential over someone more experienced without one." — University System of Maryland, 2025',
     points: [
-      'Institutions must establish dynamic updating mechanisms via strategic industry and research partnerships for access to current models, datasets, and workplace trends.',
-      'The University System of Maryland partnered with Google to offer Google Career Certificates and AI training, dynamically updating the curriculum to address workforce needs.',
-      '75% of surveyed employers would hire a less experienced candidate with a generative AI credential over a more experienced one without it.',
-      'Ma et al. (2025) propose "modular curricula" — small, self-contained units that can be updated quickly without disrupting whole degree programs.',
+      '<strong>Modular Design:</strong> Curricula should be <strong>modular</strong>, with content divided into smaller units that can be easily updated. This allows outdated tools or concepts to be replaced without redesigning entire courses and aligns with the use of micro-credentials to certify current skills.',
+      '<strong>Industry Partnerships:</strong> Partnership between universities and companies such as Google ensures course content reflects real workforce demands. These collaborations provide access to practical data and professional expertise, supporting students\' readiness for an AI-driven job market.',
     ],
   },
   {
@@ -69,62 +68,22 @@ export const SOLUTIONS = [
   {
     id: 'spotting-bias',
     number: 4,
-    title: 'Spotting Creator Bias',
+    title: 'Identifying Bias and Misinformation',
     shortTitle: 'Critical Guardrails',
     icon: '🛡️',
     tagline: 'Without critical guardrails, learner autonomy becomes a vulnerability, not a strength.',
     summary:
       'Without rigorous evaluation skills, independent learners are easily manipulated by algorithmic echo chambers, commercial agendas, "infoxication," and AI hallucinations.',
-    citations: ['Molerov et al., 2020', 'Albardía et al., 2025', 'Banaji & Abades Barclay, 2024'],
+    citations: ['Rodríguez Castillo et al., 2026', 'Ma et al., 2025', 'Molerov et al., 2020', 'Banaji & Abades Barclay, 2024'],
     ecosystemRole: 'The steering wheel — making learner autonomy safe rather than exploitable.',
     color: 'var(--accent-secondary)',
     points: [
-      'Without critical guardrails, autonomous learners are vulnerable to algorithmic echo chambers, commercial agendas, "infoxication" (information overload), and AI hallucinations.',
-      '"Critical Online Reasoning" is essential — students must be trained to recognize manipulative framing, evaluate author credibility, and spot covert commercial intent.',
-      'AI introduces deepfakes and algorithmic biases, requiring students to uncover the power dynamics and ideologies shaping media narratives.',
-      'A persistent "digital divide" exists: students from digitally experienced households navigate these tools intuitively, while others remain vulnerable. Bias-recognition must be explicitly taught.',
+      '<strong>Source Evaluation:</strong> Students should use <strong>lateral reading</strong> to verify information across multiple sources. Evaluating a creator\'s expertise and intent helps distinguish between reliable information and persuasive or biased content. Learners should also recognize signs of manipulated or AI-generated media.',
+      '<strong>Prebunking:</strong> Prebunking teaches students to identify <strong>misleading techniques,</strong> such as oversimplification or unsupported claims, before encountering them. This strengthens critical thinking, builds "psychological resistance," making students less likely to be swayed by emotionally biased content, and encourages a cautious approach to AI-generated information.',
     ],
   },
 ];
 
-export const EVIDENCE_CARDS = [
-  {
-    id: 'maryland-google',
-    title: 'University System of Maryland × Google',
-    source: 'University System of Maryland, 2025; Ma et al., 2025',
-    finding:
-      'The University System of Maryland partnered directly with Google to offer Google Career Certificates and AI training, dynamically updating the university curriculum to address immediate workforce needs.',
-    significance:
-      'Demonstrates that strategic industry partnerships can keep curricula current with the pace of AI evolution, rather than relying on slow institutional update cycles.',
-  },
-  {
-    id: 'employer-stat',
-    title: '75% Employer Credential Preference',
-    source: 'Ma et al., 2025',
-    finding:
-      '75% of surveyed employers would hire a less experienced candidate with a generative AI credential over a more experienced candidate without one.',
-    significance:
-      'Underscores the labor-market imperative: industry-backed credentials are not supplementary — they are becoming a baseline expectation for hiring.',
-  },
-  {
-    id: 'lse-evaluation',
-    title: 'LSE Evaluation of the Digital Citizenship Curriculum',
-    source: 'Banaji & Abades Barclay, 2024',
-    finding:
-      'Scenario-based, interactive explorations of everyday digital dilemmas in a "creative workshop-style format" are highly effective in building student resistance to misinformation, digital drama, and online hate.',
-    significance:
-      'Validates interactive, workshop-style pedagogy as an effective method for developing critical media literacy — not just content delivery, but experiential learning.',
-  },
-  {
-    id: 'meta-analysis',
-    title: 'Prebunking & Lateral Reading Meta-Analysis',
-    source: 'Rodríguez Castillo et al., 2026',
-    finding:
-      'Active source verification, lateral reading, and "cognitive inoculation" (prebunking) significantly improve adolescents\' ability to identify fake news and reduce their intent to share misleading content.',
-    significance:
-      'Provides robust empirical evidence (systematic meta-analysis) that specific interactive pedagogies produce measurable improvements in critical evaluation skills.',
-  },
-];
 
 export const QUIZ_QUESTIONS = [
   {
@@ -196,30 +155,30 @@ export const QUIZ_RESULTS = [
 export const RECOMMENDATIONS = [
   {
     solution: 'Self-Study',
-    title: 'Embed Self-Directed Learning as a Core Competency',
+    title: 'Make Self-Directed Learning a Core Competency',
     description:
-      'Shift curricula from passive, rote memorization toward explicitly cultivating students\' adaptive, self-directed learning abilities. Foster a "growth mindset" that prepares learners for lifelong adaptation to emerging technologies.',
+      'Move away from passive, rote memorization. Instead, design curricula that actively teach students how to guide their own learning. By fostering a growth mindset, we can prepare them to adapt as technology constantly evolves.',
     citation: 'Molerov et al., 2020',
   },
   {
     solution: 'Industry Tools',
-    title: 'Establish Dynamic Industry Partnerships',
+    title: 'Build Active Industry Partnerships',
     description:
-      'Create strategic partnerships with industry and research institutions to ensure access to cutting-edge AI models, real-world datasets, and immediate workplace trends. Adopt modular curricula that can be swiftly updated without disrupting entire degree programs.',
+      'Partner with leading companies and research institutions to give students direct access to modern AI models, real-world data, and emerging workplace trends. Adopt a flexible, modular course design so lessons can be updated quickly without disrupting entire degree programs.',
     citation: 'Ma et al., 2025; University System of Maryland, 2025',
   },
   {
     solution: 'Interactive Methods',
-    title: 'Mandate Interactive, Dialogic-Critical Pedagogy',
+    title: 'Require Interactive, Hands-On Learning',
     description:
-      'Integrate Problem-Based and Project-Based Learning where students use AI as a brainstorming partner they must evaluate and fact-check. Deploy scenario-based workshops that build resistance to misinformation through active engagement, not passive instruction.',
+      'Integrate problem-based and project-based learning where students treat AI as a collaborative brainstorming partner to evaluate and fact-check. Use scenario-based workshops to build critical resistance to misinformation through active engagement rather than lecture-heavy instruction.',
     citation: 'Albardía et al., 2025; Rodríguez Castillo et al., 2026; Ma et al., 2025; Banaji & Abades Barclay, 2024',
   },
   {
     solution: 'Critical Guardrails',
-    title: 'Make Critical Media Literacy Mandatory, Not Optional',
+    title: 'Systematize Critical Media Literacy',
     description:
-      'Explicitly teach students to investigate the ownership of technologies, the ideological bias of creators, and the hidden intentions behind the media they consume. Do not assume digital-native students can navigate these challenges intuitively — a persistent "digital divide" means bias-recognition must be systematically taught.',
+      'Train students to look beneath the surface of the digital media they consume by examining platform ownership, developer bias, and structural influence. To bridge the digital divide, schools must actively teach bias-recognition rather than assuming students will figure it out on their own.',
     citation: 'Molerov et al., 2020; Albardía et al., 2025; Banaji & Abades Barclay, 2024',
   },
 ];

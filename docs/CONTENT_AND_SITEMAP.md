@@ -17,12 +17,12 @@ more "institutions that adopt X see Y").
 |---|------|-------|---------|
 | 1 | Home | `/` | Hook + thesis preview |
 | 2 | The Challenge | `/challenge` | Problem statement, sets up the RQ |
-| 3 | The Ecosystem | `/ecosystem` | Interactive diagram, core thesis |
-| 4 | Solutions | `/solutions/:slug` | Deep dive per solution (4 sub-routes) |
-| 5 | Evidence & Case Studies | `/evidence` | Concrete proof points |
-| 6 | Recommendations | `/recommendations` | Call to action for policymakers |
+| 3 | Solutions | `/solutions/:slug` | Deep dive per solution (4 sub-routes) |
+| 4 | The Ecosystem | `/ecosystem` | Interactive diagram, core thesis |
+| 5 | Recommendations | `/recommendations` | Call to action for policymakers |
+| 6 | References | `/references` | Full source list |
 
-Global nav: Home / Challenge / Ecosystem / Solutions / Evidence / Recommendations.
+Global nav: Home / Challenge / Solutions / Ecosystem / Recommendations / References.
 Persistent light/dark toggle in the nav bar (see DESIGN_SYSTEM.md).
 
 ---
@@ -144,20 +144,7 @@ below where available.
 
 ---
 
-## 5. Evidence & Case Studies (`/evidence`)
-
-Pull these forward as standalone, citable cards (not just embedded prose):
-1. University System of Maryland × Google Career Certificates partnership
-2. 75% employer stat (generative AI credential vs. more experience)
-3. LSE evaluation of the UK Digital Citizenship Curriculum
-4. Rodríguez Castillo et al. (2026) meta-analysis on prebunking/lateral
-   reading outcomes
-
-Each card: source, one-sentence finding, why it matters for curriculum design.
-
----
-
-## 6. Recommendations (`/recommendations`)
+## 5. Recommendations (`/recommendations`)
 
 Directed asks for provosts/curriculum designers, framed as the ecosystem
 conclusion — none of the four solutions works in isolation. Suggested

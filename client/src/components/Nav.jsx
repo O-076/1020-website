@@ -6,9 +6,8 @@ import './Nav.css';
 const NAV_ITEMS = [
   { to: '/', label: 'Home', match: '/' },
   { to: '/challenge', label: 'Challenge', match: '/challenge' },
-  { to: '/ecosystem', label: 'Ecosystem', match: '/ecosystem' },
   { to: '/solutions/self-study', label: 'Solutions', match: '/solutions' },
-  { to: '/evidence', label: 'Evidence', match: '/evidence' },
+  { to: '/ecosystem', label: 'Ecosystem', match: '/ecosystem' },
   { to: '/recommendations', label: 'Recommendations', match: '/recommendations' },
   { to: '/references', label: 'References', match: '/references' },
 ];

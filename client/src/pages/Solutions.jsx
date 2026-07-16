@@ -48,10 +48,16 @@ function SolutionContent({ solution }) {
           {solution.points.map((point, i) => (
             <div key={i} className="sol-content__point">
               <span className="sol-content__point-marker" aria-hidden="true" />
-              <p>{point}</p>
+              <p dangerouslySetInnerHTML={{ __html: point }}></p>
             </div>
           ))}
         </div>
+
+        {solution.pullQuote && (
+          <aside className="sol-content__pull-quote">
+            <p>{solution.pullQuote}</p>
+          </aside>
+        )}
 
         <p className="sol-content__citation mono text-muted">
           Sources: {solution.citations.join('; ')}

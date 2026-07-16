@@ -99,7 +99,7 @@ function StatCallout() {
           of surveyed employers would hire a less experienced candidate with a generative AI credential over a more experienced candidate without one.
         </p>
         <p className="stat-section__source mono text-muted">
-          — Cited in Ma et al., 2025
+          — University System of Maryland, 2025
         </p>
       </div>
     </section>

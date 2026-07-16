@@ -99,14 +99,15 @@ function FramingSection() {
           </div>
         </div>
 
-        <blockquote className="eco-framing__conclusion">
-          <p>
-            "By teaching students to spot creator bias and critically evaluate digital
-            algorithms, educators ensure that independent learners are empowered by —
-            rather than manipulated by — the digital platforms and AI systems they use
-            to teach themselves."
-          </p>
-        </blockquote>
+        <p className="eco-framing__prose">
+          Industry-backed curricula provide the necessary tools, while interactive
+          learning methods drive students to study independently. However, this
+          independence must be anchored by critical media literacy to keep learners
+          safe and informed. By teaching students to recognize creator bias and
+          evaluate digital algorithms, educators ensure that independent learners are
+          empowered by, rather than manipulated by, the AI systems and digital
+          platforms they use.
+        </p>
       </div>
     </section>
   );

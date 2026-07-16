@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Challenge from './pages/Challenge';
 import Ecosystem from './pages/Ecosystem';
 import Solutions from './pages/Solutions';
-import Evidence from './pages/Evidence';
 import Recommendations from './pages/Recommendations';
 import References from './pages/References';
 
@@ -24,7 +23,6 @@ export default function App() {
           <Route path="/challenge" element={<Challenge />} />
           <Route path="/ecosystem" element={<Ecosystem />} />
           <Route path="/solutions/:slug" element={<Solutions />} />
-          <Route path="/evidence" element={<Evidence />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/references" element={<References />} />
         </Routes>

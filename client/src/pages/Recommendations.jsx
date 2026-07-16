@@ -18,8 +18,7 @@ function RecsHero() {
           Curriculum Designers & Provosts
         </h1>
         <p className="recs-hero__sub text-muted">
-          None of the four solutions works in isolation. These directed asks frame the
-          ecosystem conclusion — each recommendation strengthens the whole system.
+          These four solutions work best when implemented together. Each recommendation supports the next to help build a stronger, more resilient system.
         </p>
       </div>
     </section>
@@ -55,20 +54,15 @@ function ClosingStatement() {
   return (
     <section className="recs-closing section" ref={ref}>
       <div className={`container container--reading reveal ${revealed ? 'revealed' : ''}`}>
-        <blockquote className="recs-closing__quote">
-          <p>
-            Industry-backed curricula provide the relevant tools. Interactive learning
-            methods serve as the engaging engine driving independent self-study. But this
-            autonomy cannot function safely without the protective steering wheel of
-            critical media literacy.
-          </p>
-          <p>
-            By teaching students to spot creator bias and critically evaluate digital
-            algorithms, educators ensure that independent learners are empowered by —
-            rather than manipulated by — the digital platforms and AI systems they use
-            to teach themselves.
-          </p>
-        </blockquote>
+        <p className="recs-closing__prose">
+          Industry-backed curricula provide the necessary tools, while interactive
+          learning methods drive students to study independently. However, this
+          independence must be anchored by critical media literacy to keep learners
+          safe and informed. By teaching students to recognize creator bias and
+          evaluate digital algorithms, educators ensure that independent learners are
+          empowered by, rather than manipulated by, the AI systems and digital
+          platforms they use.
+        </p>
       </div>
     </section>
   );
