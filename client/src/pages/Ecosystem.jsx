@@ -49,9 +49,9 @@ function FramingSection() {
             <span className="eco-framing__role-icon" aria-hidden="true">🔧</span>
             <h3>The Fuel</h3>
             <p className="text-muted">
-              Modern, industry-backed curricula provide the relevant, up-to-date tools
-              that the system runs on. Without current tools, interactive methods lack
-              substance, and self-study becomes aimless.
+              Industry partnerships keep curricula supplied with current tools and
+              workplace knowledge. As these tools age, interactive methods have less to
+              work with, and self-study loses direction.
             </p>
             <p className="eco-framing__role-cite mono text-muted">
               {SOLUTIONS[1].citations.join('; ')}
@@ -62,9 +62,10 @@ function FramingSection() {
             <span className="eco-framing__role-icon" aria-hidden="true">⚡</span>
             <h3>The Engine</h3>
             <p className="text-muted">
-              Interactive learning methods serve as the engaging engine required to drive
-              independent self-study. Dialogic-critical pedagogy, PBL, and scenario-based
-              workshops transform passive learners into active reasoners.
+              This is the mechanism that turns self-directed learning from an
+              instruction into a practiced skill. Dialogic-critical pedagogy,
+              problem-based learning, and scenario-based workshops give students
+              repeated practice reasoning through material on their own.
             </p>
             <p className="eco-framing__role-cite mono text-muted">
               {SOLUTIONS[2].citations.join('; ')}
@@ -75,9 +76,9 @@ function FramingSection() {
             <span className="eco-framing__role-icon" aria-hidden="true">🧭</span>
             <h3>The Destination</h3>
             <p className="text-muted">
-              Teaching independent self-study creates the autonomous learner the ecosystem
-              aims to produce — equipped with a growth mindset for lifelong learning and
-              adaptation beyond graduation.
+              The ecosystem's purpose is the learner it produces: someone equipped with
+              a growth mindset, capable of adapting to new tools and knowledge well
+              beyond graduation.
             </p>
             <p className="eco-framing__role-cite mono text-muted">
               {SOLUTIONS[0].citations.join('; ')}
@@ -88,10 +89,9 @@ function FramingSection() {
             <span className="eco-framing__role-icon" aria-hidden="true">🛡️</span>
             <h3>The Steering Wheel</h3>
             <p className="text-muted">
-              Critical media literacy is the protective steering wheel. By teaching students
-              to spot creator bias and critically evaluate digital algorithms, educators
-              ensure that independent learners are empowered by — rather than manipulated
-              by — the digital platforms and AI systems they use.
+              Self-directed learners still need the judgment to evaluate what they
+              study. Teaching students to recognize creator bias and evaluate digital
+              platforms is what keeps that independence safe rather than exploitable.
             </p>
             <p className="eco-framing__role-cite mono text-muted">
               {SOLUTIONS[3].citations.join('; ')}
@@ -100,13 +100,10 @@ function FramingSection() {
         </div>
 
         <p className="eco-framing__prose">
-          Industry-backed curricula provide the necessary tools, while interactive
-          learning methods drive students to study independently. However, this
-          independence must be anchored by critical media literacy to keep learners
-          safe and informed. By teaching students to recognize creator bias and
-          evaluate digital algorithms, educators ensure that independent learners are
-          empowered by, rather than manipulated by, the AI systems and digital
-          platforms they use.
+          Take away any one of these four, and the other three don't just weaken.
+          They misfire. A curriculum with tools but no guardrails just teaches
+          students to trust AI faster. Guardrails with no tools just teaches them
+          what to distrust, with nothing to replace it.
         </p>
       </div>
     </section>

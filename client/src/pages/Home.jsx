@@ -41,6 +41,29 @@ function HeroSection() {
   );
 }
 
+function ChallengeBridge() {
+  const { ref, revealed } = useReveal(0.15);
+
+  return (
+    <section className="bridge-section section" ref={ref}>
+      <div className={`container container--reading reveal ${revealed ? 'revealed' : ''}`}>
+        <div className="bridge-section__card">
+          <p className="bridge-section__text">
+            In today's open digital environment, students are increasingly reliant on
+            the open internet rather than textbooks and school... If students no
+            longer learn from quality controlled, supervised and double checked
+            institutional sources, who ensures the quality and accuracy of what they
+            absorb?
+          </p>
+          <Link to="/challenge" className="bridge-section__link">
+            Read the full picture on The Challenge <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function NodePreview() {
   const { ref, revealed } = useReveal(0.15);
 
@@ -136,6 +159,7 @@ export default function Home() {
   return (
     <PageTransition title="Home">
       <HeroSection />
+      <ChallengeBridge />
       <NodePreview />
       <StatCallout />
       <ClosingCTA />
